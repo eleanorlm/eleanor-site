@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "next/core-web-vitals"],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "semi": true,
+        "trailingComma": "all",
+        "singleQuote": false,
+        "printWidth": 120,
+        "tabWidth": 2,
+        "useTabs": false,
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
