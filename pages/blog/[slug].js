@@ -34,24 +34,24 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ data, content }) {
   return (
     <div className="container mt-2">
-      <img className={styles.image} alt="" src={data.image} />
+      {data.image && <img className={`${styles.image} mb-4`} alt="" src={data.image} />}
 
-      <h1 class="fw-bold mt-4">{data.title}</h1>
-      <p class="text-muted mb-4">
+      <h1 className="fw-bold">{data.title}</h1>
+      <p className="text-muted mb-4">
         Published {data.date}
         {data.tags && (
           <>
             <br />
-            <span className="small mt-1">
+            <span className="small">
               {data.tags.map((tag) => (
-                <span class="badge text-bg-secondary me-1">{tag}</span>
+                <span className="badge text-bg-secondary me-1">{tag}</span>
               ))}
             </span>
           </>
         )}
       </p>
 
-      <div class="content" dangerouslySetInnerHTML={{ __html: md("commonmark").render(content) }}></div>
+      <div className="content" dangerouslySetInnerHTML={{ __html: md("commonmark").render(content) }}></div>
     </div>
   );
 }

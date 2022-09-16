@@ -24,14 +24,14 @@ export async function getStaticProps() {
 
 export default function BlogLandingPage({ posts }) {
   return (
-    <div className="container">
-      <h1 class="mt-1">Blog</h1>
+    <div className="container mb-4">
+      <h1 className="mt-1">My Blog</h1>
 
       <div className="row row-cols-1 row-cols-lg-4 g-4 mt-1">
         {posts.map(({ slug, data }) => (
-          <div key={slug} className={`col ${styles.column}`}>
+          <div key={slug} className="col card-col">
             <div className={`card ${styles.postCard}`}>
-              <img src={data.image} className={`card-img-top ${styles.postImage}`} alt="" />
+              {data.image && <img src={data.image} className={`card-img-top ${styles.postImage}`} alt="" />}
               <div className="card-body">
                 <Link href={`/blog/${slug}`} passHref>
                   <a className={`h5 card-title stretched-link ${styles.postLink}`}>{data.title}</a>
@@ -41,7 +41,7 @@ export default function BlogLandingPage({ posts }) {
                 {data.tags && (
                   <p className="card-text small mt-1">
                     {data.tags.map((tag) => (
-                      <span class="badge text-bg-secondary me-1">{tag}</span>
+                      <span className="badge text-bg-secondary me-1">{tag}</span>
                     ))}
                   </p>
                 )}

@@ -33,7 +33,7 @@ $card-box-shadow: 0 0.1rem 0.5rem rgba(#000, 0.15);
 
 main {
   background-color: #fff;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -42,8 +42,12 @@ a:not(.btn),
   &:focus {
     background-color: rgba(0, 0, 0, 0.05);
     color: $primary;
-    text-decoration: none;
+    text-decoration: none !important;
   }
+}
+
+.card-link:hover {
+  text-decoration: underline !important;
 }
 
 .content p {
@@ -53,3 +57,21 @@ a:not(.btn),
 .post {
   text-align: justify;
 }
+
+.card-col {
+  display: flex;
+  flex-direction: column;
+}
+
+// this is bootstrap's lg breakpoint
+@media screen and (max-width: 991px) {
+  .card-col {
+    align-items: center;
+  }
+
+  .card-col .card {
+    width: 100%;
+  }
+}
+
+@import "./projects";

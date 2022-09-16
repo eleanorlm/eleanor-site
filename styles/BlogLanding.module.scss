@@ -1,4 +1,4 @@
-$body-color: #212529 !default;
+$body-color: #212529;
 
 .postCard {
   max-width: 18rem;
@@ -25,21 +25,5 @@ $body-color: #212529 !default;
 
   &:focus {
     color: $body-color !important;
-  }
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-// this is bootstrap's lg breakpoint
-@media screen and (max-width: 991px) {
-  .column {
-    align-items: center;
-  }
-
-  .postCard {
-    width: 100%;
   }
 }
