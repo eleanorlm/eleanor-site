@@ -1,0 +1,91 @@
+// TODO: Just load these via globals, not sure why we can't but it didn't work lol
+$body-color: #212529 !default;
+$primary: #1abc9c !default;
+
+.header {
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+
+  .row {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.name {
+  text-align: left;
+
+  a {
+    text-decoration: none !important;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+    margin: 0 1rem;
+    color: $body-color;
+
+    &:hover {
+      color: $body-color;
+    }
+
+    &:focus {
+      color: $body-color;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    margin: 0 0.25rem;
+  }
+}
+
+.social, .name {
+  a {
+    color: $primary;
+
+    &:hover {
+      color: darken($primary, 7);
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: darken($primary, 7);
+      text-decoration: none;
+    }
+  }
+}
+
+.social a:focus {
+  background-color: transparent;
+}
+
+// this is bootstrap's lg breakpoint
+@media screen and (max-width: 991px) {
+  .name {
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
+
+// TODO: Hamburger!!
+@media screen and (max-width: 440px) {
+  .nav {
+    flex-direction: column;
+  }
+}

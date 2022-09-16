@@ -1,0 +1,45 @@
+$body-color: #212529 !default;
+
+.postCard {
+  max-width: 18rem;
+  height: 100%;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+    transform: translateY(-0.5rem);
+  }
+}
+
+.postImage {
+  object-fit: cover;
+  max-height: 12rem;
+}
+
+.postLink {
+  color: $body-color;
+
+  &:hover {
+    color: $body-color;
+  }
+
+  &:focus {
+    color: $body-color !important;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+// this is bootstrap's lg breakpoint
+@media screen and (max-width: 991px) {
+  .column {
+    align-items: center;
+  }
+
+  .postCard {
+    width: 100%;
+  }
+}

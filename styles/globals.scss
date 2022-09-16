@@ -1,0 +1,55 @@
+// TODO: Refactor this file to make it more clear
+
+// Bootstrap variable overrides
+$primary: #1abc9c;
+$body-bg: #f8f9fa;
+
+$enable-shadows: true;
+$enable-gradients: true;
+
+$link-decoration: none;
+$link-hover-color: $primary;
+$link-hover-decoration: underline;
+
+$paragraph-margin-bottom: 0;
+
+$font-family-sans-serif: "DM Sans", Arial, Helvetica, sans-serif;
+$display-font-family: "DM Sans Display", serif;
+
+$card-box-shadow: 0 0.1rem 0.5rem rgba(#000, 0.15);
+
+// Import bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&::selection {
+		background-color: $primary;
+		color: #fff;
+	}
+}
+
+main {
+  background-color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+a:not(.btn),
+.card-link {
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.post {
+  text-align: justify;
+}
