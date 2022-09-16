@@ -35,7 +35,7 @@ const DESCRIPTIONS = {
   the Python ML code) and the web frontend (which was hosted on Amazon S3). I used Express for the backend, using a fairly standard boilerplate
   that I had memorised to build the API, and created a simple frontend builder (using Nunjucks for page templating) to handle the web HTML, CSS, and JS.`,
 
-  THIS_WEBSITE: `This website was built using Next.js and is a static site with a markdown-based blog.
+  THIS_WEBSITE: `This website was built using Next.js and is a static site with a markdown-based blog. It is hosted using Vercel.
   I created the website myself using Bootstrap was used as a base for common components and styles to modify and build upon.
   The source code is viewable below, and you can also see the content and code be iterated on via Git history.`,
 
