@@ -2,8 +2,6 @@ import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
 
-import Image from "next/image";
-
 import styles from "../../styles/BlogPost.module.scss";
 
 export async function getStaticPaths() {
@@ -34,6 +32,7 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ data, content }) {
   return (
     <div className="container mt-2">
+      {/* TODO: Migrate to using next/future/image here */}
       {data.image && <img className={`${styles.image} mb-4`} alt="" src={data.image} />}
 
       <h1 className="fw-bold">{data.title}</h1>

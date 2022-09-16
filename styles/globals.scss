@@ -5,7 +5,7 @@ $primary: #1abc9c;
 $body-bg: #f8f9fa;
 
 $enable-shadows: true;
-$enable-gradients: true;
+$enable-gradients: false;
 
 $link-decoration: none;
 $link-hover-color: $primary;
@@ -33,8 +33,6 @@ $card-box-shadow: 0 0.1rem 0.5rem rgba(#000, 0.15);
 
 main {
   background-color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 a:not(.btn),
@@ -61,6 +59,27 @@ a:not(.btn),
 .card-col {
   display: flex;
   flex-direction: column;
+}
+
+.linkCard {
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+    transform: translateY(-0.5rem);
+  }
+}
+
+.linkCard a {
+  color: $body-color;
+
+  &:hover {
+    color: $body-color;
+  }
+
+  &:focus {
+    color: $body-color !important;
+  }
 }
 
 // this is bootstrap's lg breakpoint

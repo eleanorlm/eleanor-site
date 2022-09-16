@@ -1,6 +1,5 @@
 import fs from "fs";
 import matter from "gray-matter";
-import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../../styles/BlogLanding.module.scss";
@@ -30,11 +29,12 @@ export default function BlogLandingPage({ posts }) {
       <div className="row row-cols-1 row-cols-lg-4 g-4 mt-1">
         {posts.map(({ slug, data }) => (
           <div key={slug} className="col card-col">
-            <div className={`card ${styles.postCard}`}>
+            <div className={`card linkCard ${styles.postCard}`}>
+              {/* TODO: Migrate to using next/future/image here */}
               {data.image && <img src={data.image} className={`card-img-top ${styles.postImage}`} alt="" />}
               <div className="card-body">
                 <Link href={`/blog/${slug}`} passHref>
-                  <a className={`h5 card-title stretched-link ${styles.postLink}`}>{data.title}</a>
+                  <a className="h5 card-title stretched-link">{data.title}</a>
                 </Link>
                 <p className="card-text">{data.description}</p>
                 <p className="card-text text-muted">{data.date}</p>
