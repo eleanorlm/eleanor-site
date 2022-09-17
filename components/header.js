@@ -2,7 +2,7 @@ import styles from "../styles/Header.module.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faTwitter, faGithub, faDiscord, faDev /*, faLinkedin*/ } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import Link from "next/link";
 
@@ -44,8 +44,7 @@ export default function Header() {
           <div className={`col-lg-2 fs-5 ${styles.social}`}>
             <SocialLink icon={faTwitter} href="https://twitter.com/imautonor" />
             <SocialLink icon={faGithub} href="https://github.com/eleanorlm" />
-            <SocialLink icon={faDiscord} href="https://discord.com/users/340861504255557634" />
-            <SocialLink icon={faDev} href="https://dev.to/eleanorlm" />
+            <SocialLink icon={faLinkedin} href="https://linkedin.com/in/eleanorlm" />
           </div>
         </div>
       </div>
