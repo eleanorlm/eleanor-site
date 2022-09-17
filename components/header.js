@@ -1,10 +1,8 @@
 import styles from "../styles/Header.module.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/fontawesome-free-brands";
-import { faInstagram } from "@fortawesome/fontawesome-free-brands";
-import { faLinkedin } from "@fortawesome/fontawesome-free-brands";
-import { faGithub } from "@fortawesome/fontawesome-free-brands";
+
+import { faTwitter, faGithub, faDiscord, faDev, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import Link from "next/link";
 
@@ -18,7 +16,7 @@ function SocialLink(props) {
 
 function NavLink(props) {
   return (
-    <Link href={props.href} prefetch={false}>
+    <Link href={props.href} prefetch={false} title={props.title}>
       {props.name}
     </Link>
   );
@@ -44,10 +42,10 @@ export default function Header() {
           </div>
 
           <div className={`col-lg-2 fs-5 ${styles.social}`}>
-            <SocialLink icon={faTwitter} href="#" />
-            <SocialLink icon={faInstagram} href="#" />
-            <SocialLink icon={faLinkedin} href="#" />
-            <SocialLink icon={faGithub} href="#" />
+            <SocialLink icon={faTwitter} href="https://twitter.com/imautonor" />
+            <SocialLink icon={faGithub} href="https://github.com/eleanorlm" />
+            <SocialLink icon={faDiscord} href="https://discord.com/users/340861504255557634" />
+            <SocialLink icon={faDev} href="https://dev.to/eleanorlm" />
           </div>
         </div>
       </div>
