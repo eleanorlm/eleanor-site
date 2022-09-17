@@ -79,9 +79,9 @@ export default function ContactPage({ SKILLS }) {
 
       <div className="content">
         <p className="lead mb-0">
-          Hi, my name's Eleanor &ndash; I'm from North London and predominately interested in law, psychology, business
-          and operations, politics, railways, engineering, electronics, technology, and programming. I personally
-          consider myself a 'jack of all trades, master of none'
+          Hi, my name&apos;s Eleanor &ndash; I&apos;m from North London and predominately interested in law, psychology,
+          business and operations, politics, railways, engineering, electronics, technology, and programming. I
+          personally consider myself a &apos;jack of all trades, master of none&apos;
         </p>
         <p className="small text-end w-100 pe-4">but a jack of some trades is better than none</p>
 
@@ -89,9 +89,9 @@ export default function ContactPage({ SKILLS }) {
 
         <h2>Background</h2>
         <p>
-          Since a very young age, I've always been fascinated with areas connected to electronics and technology. This
-          curiosity manifested itself in a strong interest in computing; as a kid, I would often play with (and break
-          😅) various computers and laptops around.
+          Since a very young age, I&apos;ve always been fascinated with areas connected to electronics and technology.
+          This curiosity manifested itself in a strong interest in computing; as a kid, I would often play with (and
+          break 😅) various computers and laptops around.
         </p>
 
         <p>
@@ -104,7 +104,7 @@ export default function ContactPage({ SKILLS }) {
         <p>
           Reaching my teenage years, I learned of Node - which allowed you to run JavaScript code outside the browser -
           and Express.js, which made it possible to build web servers and sites with Node. I fell in love with Node and
-          Express instantly and they're both tools I use extensively to this day. As a teen, I would build websites
+          Express instantly and they&apos;re both tools I use extensively to this day. As a teen, I would build websites
           using Node, MongoDB, and EJS, this was also the time I discovered Bootstrap and frontend frameworks.
         </p>
 
@@ -134,8 +134,8 @@ export default function ContactPage({ SKILLS }) {
           <div className="col-md">
             <p>
               Currently, I am primarily focused on concluding my A Levels and finishing a small game development project
-              I am working on the side with my friends. However, I'd like to learn Rust and Yarn, and subsequently look
-              more into the world of traditional languages, such as C#.
+              I am working on the side with my friends. However, I&apos;d like to learn Rust and Yarn, and subsequently
+              look more into the world of traditional languages, such as C#.
             </p>
           </div>
 

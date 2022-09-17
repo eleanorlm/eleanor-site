@@ -30,12 +30,12 @@ export default function HomePage() {
 
             <div className="col-md-8 d-flex flex-column justify-content-center">
               <h1>Hello, world</h1>
-              <p className="lead mb-1">My name's Eleanor. Welcome to my website!</p>
+              <p className="lead mb-1">My name&apos;s Eleanor. Welcome to my website!</p>
               <p className="mb-1">
-                I'm a programmer, web developer, and general nerd from North London. I'm currently in Year 13 working
-                towards my A-Levels.
+                I&apos;m a programmer, web developer, and general nerd from North London. I&apos;m currently in Year 13
+                working towards my A-Levels.
               </p>
-              <p>You can check out what I'm currently up to on my social media &ndash; linked in the header.</p>
+              <p>You can check out what I&apos;m currently up to on my social media &ndash; linked in the header.</p>
             </div>
           </div>
         </div>

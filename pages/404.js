@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function NotFoundPage({ statusCode }) {
+export default function NotFoundPage() {
   return (
     <>
       <Head>
-        <title>Nothing's here</title>
+        <title>Nothing&apos;s here</title>
       </Head>
 
       <div className="container text-center mt-3">

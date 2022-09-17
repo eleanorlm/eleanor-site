@@ -2,7 +2,7 @@ import styles from "../styles/Header.module.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faTwitter, faGithub, faDiscord, faDev, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faGithub, faDiscord, faDev /*, faLinkedin*/ } from "@fortawesome/free-brands-svg-icons";
 
 import Link from "next/link";
 

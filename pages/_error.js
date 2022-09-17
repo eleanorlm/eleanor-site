@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 
 export function getInitialProps({ res, err }) {
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404;

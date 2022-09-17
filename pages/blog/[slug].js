@@ -43,7 +43,9 @@ export default function PostPage({ data, content }) {
             <br />
             <span className="small">
               {data.tags.map((tag) => (
-                <span className="badge text-bg-secondary me-1">{tag}</span>
+                <span className="badge text-bg-secondary me-1" key={tag}>
+                  {tag}
+                </span>
               ))}
             </span>
           </>

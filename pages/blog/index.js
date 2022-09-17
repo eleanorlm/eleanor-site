@@ -41,7 +41,9 @@ export default function BlogLandingPage({ posts }) {
                 {data.tags && (
                   <p className="card-text small mt-1">
                     {data.tags.map((tag) => (
-                      <span className="badge text-bg-secondary me-1">{tag}</span>
+                      <span className="badge text-bg-secondary me-1" key={`${slug}_${tag}`}>
+                        {tag}
+                      </span>
                     ))}
                   </p>
                 )}

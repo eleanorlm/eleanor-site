@@ -6,7 +6,9 @@ function Project({ title, text, badges, links }) {
           {badges && (
             <span className="small">
               {badges.map(({ color, label }) => (
-                <span className={`badge text-bg-${color} me-1 rounded-pill`}>{label}</span>
+                <span className={`badge text-bg-${color} me-1 rounded-pill`} key={`${title}_badge-${color}__${label}`}>
+                  {label}
+                </span>
               ))}
             </span>
           )}
@@ -17,7 +19,7 @@ function Project({ title, text, badges, links }) {
           {links && (
             <>
               {links.map(({ href, label }) => (
-                <a className="card-link" href={href}>
+                <a className="card-link" href={href} key={`${title}_link-${href}__${label}`}>
                   {label}
                 </a>
               ))}
