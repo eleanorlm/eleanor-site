@@ -81,7 +81,7 @@ export default function ProjectsPage() {
             { color: "warning", label: "JavaScript" },
             { color: "info", label: "React" },
           ]}
-          links={[{ href: "#", label: "GitHub" }]}
+          links={[{ href: "https://github.com/eleanorlm/eleanor-site", label: "GitHub" }]}
         />
 
         <Project
