@@ -5,12 +5,15 @@ export default function ContactPage() {
 
       <div className="content">
         <p>
-          The best way to reach out to me is via email: <a href="mailto:eleanor@autonor.me">eleanor@autonor.me</a>. Any
-          professional enquiries should be sent to this address rather than via other contact mediums.
+          The best way to reach out to me is via email: <a href="mailto:contact@emozley.com">contact@emozley.com</a>.
+          Any professional enquiries should be sent to this address rather than through other contact mediums.
           <br /> Please no spam :(
         </p>
 
-        <p>You can also see some of my social media accounts linked in the header/navbar.</p>
+        <p>
+          You can also see some of my social media accounts linked in the header/navbar. There is, however, no guarantee
+          that I will read or respond to messages sent on social media.
+        </p>
       </div>
     </div>
   );
