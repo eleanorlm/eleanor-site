@@ -15,6 +15,7 @@
     "bootstrap": "5.2.1",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
+    "markdown-to-jsx": "^7.1.7",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -23,9 +24,6 @@
   "devDependencies": {
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-mdx": "^2.0.4",
-    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1"
   }
 }
