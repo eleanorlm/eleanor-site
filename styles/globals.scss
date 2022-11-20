@@ -52,34 +52,9 @@ a:not(.btn),
   margin-bottom: 1rem;
 }
 
-.post {
-  text-align: justify;
-}
-
 .card-col {
   display: flex;
   flex-direction: column;
-}
-
-.linkCard {
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
-    transform: translateY(-0.5rem);
-  }
-}
-
-.linkCard a {
-  color: $body-color;
-
-  &:hover {
-    color: $body-color;
-  }
-
-  &:focus {
-    color: $body-color !important;
-  }
 }
 
 // this is bootstrap's lg breakpoint
