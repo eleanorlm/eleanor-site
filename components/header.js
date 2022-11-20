@@ -28,23 +28,22 @@ export default function Header() {
       <div className="container">
         <div className="row">
           <div className={`col-lg-2 fs-5 color-primary fw-bold ${styles.name}`}>
-            <NavLink href="/" name="Eleanor LM" />
+            <NavLink href="/" name="Eleanor" />
           </div>
 
           <div className="col-lg-8 fw-bold">
             <nav className={styles.nav}>
-              <NavLink href="/" name="Home" />
-              <NavLink href="/about" name="About" />
+              <NavLink href="/" name="About" />
               <NavLink href="/projects" name="Projects" />
-              <NavLink href="/blog" name="Blog" />
+              {/* <NavLink href="/blog" name="Blog" /> */}
               <NavLink href="/contact" name="Contact" />
             </nav>
           </div>
 
           <div className={`col-lg-2 fs-5 ${styles.social}`}>
-            <SocialLink icon={faTwitter} href="https://twitter.com/imautonor" />
-            <SocialLink icon={faGithub} href="https://github.com/eleanorlm" />
-            <SocialLink icon={faLinkedin} href="https://linkedin.com/in/eleanorlm" />
+            <SocialLink icon={faTwitter} href="https://twitter.com/EleanorMozley" />
+            <SocialLink icon={faGithub} href="https://github.com/EleanorLM" />
+            <SocialLink icon={faLinkedin} href="https://linkedin.com/in/EleanorMozley" />
           </div>
         </div>
       </div>
