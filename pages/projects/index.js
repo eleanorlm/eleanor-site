@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 function Project({ title, text, badges, links }) {
   return (
     <div className="col card-col">
@@ -50,12 +52,16 @@ const DESCRIPTIONS = {
   KAYAK: `Kayak was a package manager intended for Roblox developers storing their game development
   files on their computer (rather than in the cloud). It was written in Node.js and allowed developers to import
   and manage various packages and dependencies, any GitHub repository could be downloaded. Kayak was originally made
-  to act as a placeholder while a 'proper' package manager was developed. Its source code is no-longer avaliable.`,
+  to act as a placeholder while a 'proper' package manager was developed. Its source code is no-longer available.`,
 };
 
 export default function ProjectsPage() {
   return (
     <div className="container mb-4">
+      <Head>
+        <title>Projects • Eleanor Mozley</title>
+      </Head>
+
       <h1>My Projects</h1>
 
       <p className="mb-3 lead">
