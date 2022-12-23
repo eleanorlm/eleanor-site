@@ -1,6 +1,12 @@
+import Head from "next/head";
+
 export default function ContactPage() {
   return (
     <div className="container">
+      <Head>
+        <title>Contact • Eleanor Mozley</title>
+      </Head>
+
       <h1>Contact Me</h1>
 
       <div className="content">

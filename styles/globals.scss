@@ -22,13 +22,13 @@ $card-box-shadow: 0 0.1rem 0.5rem rgba(#000, 0.15);
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-	&::selection {
-		background-color: $primary;
-		color: #fff;
-	}
+  &::selection {
+    background-color: $primary;
+    color: #fff;
+  }
 }
 
 main {

@@ -11,7 +11,7 @@ export default function Footer() {
        *  (3) Roman numerals conceal the year the site was last updated
        *       (which is probably also why they're used in the first place)
        */}
-      <p>&copy; MMXXII Eleanor Mozley</p>
+      <p>&copy; MMXXIII Eleanor Mozley</p>
     </footer>
   );
 }
